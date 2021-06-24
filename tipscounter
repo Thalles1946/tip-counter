@@ -1,0 +1,62 @@
+ct=float(input("Bem vindo ao caixa, digite o custo total: "))
+vp=float(input("Agora digite o valor pag: "))
+t=vp-ct
+t100=0
+t5=0
+t50=0
+t20=0
+t10=0
+t2=0
+t1=0
+t050=0
+t025=0
+t010=0
+t005=0
+if t<0:
+    print("Caraca deixa de ser safado, nem pagou tudo e quer troco 😡")
+else:
+    while t>=100:
+        t-=100
+        t100+=1
+    while t>=50:
+        t-=50
+        t50+=1
+    while t>=20:
+        t-=20
+        t20+=1
+    while t>=10:
+        t-=10
+        t10+=1
+    while t>=5:
+        t-=5
+        t5+=1
+    while t>=2:
+        t-=2
+        t2+=1
+    while t>=1:
+        t-=1
+        t1+=1
+    while t>=0.50:
+        t-=0.50
+        t050+=1
+    while t>=0.25:
+        t-=0.25
+        t025+=1
+    while t>=0.10:
+        t-=0.10
+        t010+=1
+    while t>=0.05:
+        t-=0.05
+        t005+=1
+    print("O troco será de {} sendo:" .format(t))
+    print("{} notas de R$100".format(t100))
+    print("{} notas de R$50".format(t50))
+    print("{} notas de R$20".format(t20))
+    print("{} notas de R$10".format(t10))
+    print("{} notas de R$5".format(t5))
+    print("{} notas de R$2".format(t2))
+    print("{} moedas de R$1".format(t1))
+    print("{} moedas de R$0.50".format(t050))
+    print("{} moedas de R$0.25".format(t025))
+    print("{} moedas de R$0.10".format(t010))
+    print("{} moedas de R$0.05".format(t005))
